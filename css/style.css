@@ -1,0 +1,356 @@
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 20px;
+}
+
+  /* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+}
+
+  /* Handle */
+::-webkit-scrollbar-thumb {
+    background: black; 
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: #0078FF; 
+ 
+}
+body{
+scroll-behavior: smooth;
+background-color: #ebebeb;
+}
+ul{
+text-decoration: none;
+list-style: none;
+}
+a{
+text-decoration: none;
+}
+/*Home*/
+#Home
+{
+min-height: 100vh;
+background-image: url(image/hero-bg.jpg);
+position: relative;
+background-position: center center;
+background-size: cover;
+background-repeat: no-repeat;
+background-attachment: fixed;
+z-index: 2;
+}
+#Home .caption h1{
+    font-weight: 600;
+    font-size: 4rem;
+}
+#Home .caption p{
+    font-weight: 400;
+    font-size: 2rem;
+}
+nav{
+ background-color:  rgba(0, 0, 0, 0.9);;
+ color: white;
+ 
+}
+nav .active{
+    color: white !important;
+    position: relative !important;
+}
+nav .active::after{
+    content: "" !important;
+    position: absolute !important;
+    height: 3px !important;
+    width: 80% !important;
+    background-color: #fafafa !important;
+    bottom: 1px !important;
+    left: 5px !important;
+}
+/*About*/
+#About .container .para h2{
+    position: relative;
+}
+#About .container .para h2::after{
+    content: "";
+    position: absolute;
+    height: 5px;
+    width: 28%;
+    background-color: #0078FF;
+    bottom: -9px;
+    left: 0px;
+}
+/*Service*/
+#Services .container .box .circle{
+    border:  solid #0078FF;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    margin-inline: auto;
+}
+#Services .container .box .circle i{
+    font-size: 30px;
+    text-align: center;
+    padding-top: 30%;
+}
+#Services .container .box .circle:hover{
+    border:  solid rgb(33, 33, 33);
+    background-color: #0078FF;
+}
+#Services .container .box .circle:hover i{
+    color: white;
+}
+.end-services{
+    background-image: url(/image/counters-bg.jpg);
+    width: 100%;
+
+}
+.line{
+    width: 10%;
+    margin-inline:auto;
+    height: 5px;
+    background-color: #0078FF;
+    text-align: center;
+}
+/*Work*/
+#Work .box img{
+   transition: all 1s;
+}
+#Work .box:hover img{
+    transform: scale(1.2);
+cursor: pointer;
+}
+#Work .card .image{
+   overflow: hidden;
+}
+#Work .circle{
+    border: 3px solid #0078FF;
+    border-radius: 50%;
+    width: 30px;
+    text-align: center;
+}
+/*Blog*/
+#Blog .image-2{     
+    width: 60%;
+    height: 30%;
+}
+#Blog .card{
+    position: relative;
+}
+
+#Blog .image-2 img{
+    width: 15%;
+    
+}
+#Blog .image-2 a:hover{
+color: #0078FF;
+}
+#Blog .card-body .para a:hover{
+    color: #0078FF;
+}
+hr{
+    width: 100%;
+    height: 2px;
+    color: #3c3c3c;
+}
+#Blog .button a{
+font-size: 10px;
+}
+#Blog .box .card .card-body .para p a{
+    color: black;
+    font-weight: bold;
+}
+#Blog .box .card .card-body .para p a:hover{
+    color: #0078FF;
+    
+}
+#Blog .box .card .footer-card a:hover{
+    color: #0078FF;
+    
+}
+#Blog .box .card .footer-card a{
+    color: black;
+    
+}
+#Blog .box .card .footer-card a span{
+   margin-left: 3px;
+    
+}
+#Blog .card-button{
+    position: absolute;
+    text-align: center;
+    top: -24px;
+    left: 5px;
+    right: 15px;
+    line-height: 25px;
+    overflow: hidden;
+}
+#Blog .card-body{
+    position: relative;
+}
+#Blog .card-button .button{
+    display: inline-block;
+    color: #fff;
+    padding:  5px;
+    overflow: hidden;
+    background-color: #0078ff;
+    border-radius: 10px;
+    padding-top: 9px;
+}
+#Blog .card-button .button .bnt{
+    font-size: 10px;
+    
+}
+/*counter*/
+.counter{
+width: 100%;
+background-position: center center;
+background-size: cover;
+background-repeat: no-repeat;
+background-attachment: fixed;
+position: relative;
+}
+
+.bg{
+ position: absolute;
+ background-color: #0077ffbb;
+ width: 100%;
+ height: 100%;
+ top: 0;
+ left: 0;
+ 
+}
+.counter .end-services .box{
+    z-index:99;
+}
+.counter .end-services .box .circle{
+    border: 5px solid #fafafa;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    margin-inline: auto;
+    margin-bottom: 10px;
+    padding-top: 5px;
+}
+.slider{
+    width: 100%;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative; 
+}
+.carousel-indicators [data-bs-target]{
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+}
+
+.carousel-inner .img{
+    width: 150px;
+    height: 150px;
+}
+.carousel{
+    z-index: 999;
+}
+#Contact{
+    width: 100%;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative; 
+    box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
+}
+#Contact .circle {
+    border: 5px solid #0077ff9c;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+  
+}
+#Contact .container .row .data .socials ul li a .circle{
+    border:3px solid #0077ff9c;
+
+}
+
+#Contact .container .row .data .socials ul li a .circle:hover{
+   background-color: #0078FF;
+}
+#Contact .container .row .data .socials ul li a .circle:hover i{
+    color: #fff;
+ }
+ #Contact .container .row .data i{
+    color: #0078FF;
+ }
+ #Contact .container h2{
+    position: relative;
+}
+#Contact .container  h2::after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 28%;
+    background-color: #0078FF;
+    bottom: -9px;
+    left: 0px;
+}
+.gotoup{
+    position: fixed;
+    height: 45px;
+    width: 45px;
+    bottom: 40px;
+    right: 20px;
+    background-color: #0078FF;
+    text-align: center;
+    text-decoration: none;
+    line-height: 50px;
+    color: #fafafa;
+    font-size: 22px;
+    font-weight: bold;
+    border-radius: 50%;
+    z-index: 1;
+
+}
+.gotoup:hover{
+  background-color: #00ff1e;
+  cursor: pointer;
+}
+
+
+
+@media (max-width: 575.98px) { 
+    #Home  .caption h1{
+        font-size: 30px;
+    }
+    #Home p{
+        font-size: 20px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
